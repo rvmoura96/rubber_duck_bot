@@ -2,7 +2,7 @@ from telegram.ext import Updater, CommandHandler
 from time import strftime
 
 
-up = Updater('BOT_ID')
+up = Updater('381143222:AAHLQXTyoSOx7YCpHI6WKgqkVr-9qoegvrA')
 
 def Horas(bot, update):
     msg = 'Olá {user_name} agora são: '
@@ -27,4 +27,5 @@ up.dispatcher.add_handler(CommandHandler('duvidas', Duvida))
 up.dispatcher.add_handler(CommandHandler('horas', Horas))
 up.dispatcher.add_handler(CommandHandler('start', Comeca))
 up.dispatcher.add_handler(CommandHandler('help', Duvida))
+up.dispatcher.add_handler(CommandHandler('ajuda', Duvida))
 up.start_polling()
