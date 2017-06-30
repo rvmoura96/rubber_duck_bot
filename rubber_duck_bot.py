@@ -2,7 +2,7 @@ from telegram.ext import Updater, CommandHandler
 from time import strftime
 
 
-up = Updater('')
+up = Updater('BOT_TOKEN')
 
 def Horas(bot, update):
     msg = 'Olá {user_name} agora são: '
